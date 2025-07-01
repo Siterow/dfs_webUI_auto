@@ -1,0 +1,2 @@
+userMenu_locator: '//*[@id="app"]/div[2]/div[1]/section/div[3]/div[7]/div'
+logout_button_locator: "//li[contains(text(), '退出登录')]"
