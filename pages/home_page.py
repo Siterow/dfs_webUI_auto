@@ -1,4 +1,6 @@
 import os
+import time
+
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -15,6 +17,14 @@ class HomePage:
         data = read_yaml(yaml_path)
         self.userMenu_locator = (By.XPATH, data.get("userMenu_locator"))
         self.logout_button_locator = (By.XPATH, data.get('logout_button_locator'))
+        self.menu_business_locator = (By.XPATH, data.get('menu_business_locator'))
+        self.menu_stationSwitch_locator = (By.XPATH, data.get('menu_stationSwitch_locator'))
+
+    def click_menu_tree(self):
+        self.wait.until(EC.element_to_be_clickable(self.menu_business_locator)).click()
+
+    def click_menu(self):
+        self.wait.until(EC.element_to_be_clickable(self.menu_stationSwitch_locator)).click()
 
     def click_avatar(self):
         avatar = self.wait.until(EC.element_to_be_clickable(self.userMenu_locator))
@@ -24,4 +34,5 @@ class HomePage:
         logout = self.wait.until(EC.visibility_of_element_located(self.logout_button_locator))
         print("正在退出登录")
         logout.click()
+
 

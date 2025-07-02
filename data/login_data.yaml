@@ -2,6 +2,5 @@ username: admin
 password: 88888888
 loginUrl: "http://guava.ob.shuyilink.com/#/login"
 username_locator: '//*[@id="app"]/div[2]/div[3]/div[2]/div/form/div[1]/div/div/input'
-username_locator_id:
 password_locator: '//*[@id="app"]/div[2]/div[3]/div[2]/div/form/div[2]/div/div[1]/input'
 login_button_locator: '//*[@id="app"]/div[2]/div[3]/div[2]/div/button'

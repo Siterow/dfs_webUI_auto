@@ -5,6 +5,8 @@ import time
 
 def test_logout(logged_in_driver):
     logout = HomePage(logged_in_driver)
+    logout.click_menu_tree()
+    logout.click_menu()
     logout.click_avatar()
     time.sleep(2)
     logout.click_logout()
