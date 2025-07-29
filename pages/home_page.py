@@ -7,6 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from utils.read_yaml import read_yaml
 
 
+# 点击右上角人的头像来登出
 class HomePage:
     def __init__(self, driver):
         self.driver = driver

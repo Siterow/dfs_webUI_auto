@@ -1,5 +1,6 @@
-userMenu_locator: '//*[@id="app"]/div[2]/div[1]/section/div[3]/div[7]/div'
-logout_button_locator: "//li[contains(text(), '退出登录')]"
-menu_business_locator: '//*[@id="app-main"]/section/div[1]/div/ul/li[5]'
-menu_stationSwitch_locator: '//*[@id="pane-tab-120100000"]/div/div[1]/div[2]/div'
-menu_stationSwitch_locationInput_locator: '//*[@id="sy-tree35809"]/div[2]/div/input'
+userMenu_locator: '//span[@class="el-dropdown-link el-dropdown-selfdefine"]'   #主页右上角用户头像
+logout_button_locator: '//li[contains(text(), "退出登录")]'
+menu_business_locator: '//span[text()="业务流程"]'  # 左侧菜单-业务流程
+menu_stationSwitch_locator: '//div[contains(@class, "link-item")]//span[text()="站点切换"]'  # 左侧菜单-业务流程-站点切换
+menu_stationSwitch_locationInput_locator: '//input[@placeholder="搜索关键词"]'  # 站点切换-生产组织筛选
+choose_station_location: '//span[@class="txt txt-oneline" and text()="TEST-1130021|1地点车间1"]'  #点击地点

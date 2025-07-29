@@ -8,11 +8,11 @@ class LoginPage:
         self.driver = driver
 
         # 读取登录信息
-        yaml_path = os.path.join(os.path.dirname(__file__), "../data/login_data.yaml")
-        data = read_yaml(yaml_path)
-        self.default_username = data.get("username")
-        self.default_password = data.get("password")
-        self.url = data.get("loginUrl")
+        data = read_yaml(os.path.join(os.path.dirname(__file__), "../data/login_data.yaml"))
+        test_data = read_yaml(os.path.join(os.path.dirname(__file__), "../data/test_data.yaml"))
+        self.default_username = test_data.get("username")
+        self.default_password = test_data.get("password")
+        self.url = test_data.get("loginUrl")
         self.username_locator = (By.XPATH, data.get("username_locator"))
         self.password_locator = (By.XPATH, data.get("password_locator"))
         self.login_button_locator = (By.XPATH, data.get("login_button_locator"))

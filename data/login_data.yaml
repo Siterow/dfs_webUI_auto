@@ -1,6 +1,3 @@
-username: admin
-password: 88888888
-loginUrl: "http://guava.ob.shuyilink.com/#/login"
-username_locator: '//*[@id="app"]/div[2]/div[3]/div[2]/div/form/div[1]/div/div/input'
-password_locator: '//*[@id="app"]/div[2]/div[3]/div[2]/div/form/div[2]/div/div[1]/input'
-login_button_locator: '//*[@id="app"]/div[2]/div[3]/div[2]/div/button'
+username_locator: '//input[@placeholder="请输入账号"]'
+password_locator: '//input[@placeholder="请输入密码"]'
+login_button_locator: '//button[contains(@class, "login-submit") and span[text()=" 登录 "]]'

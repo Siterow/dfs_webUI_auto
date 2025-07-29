@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09e1021c-1dd1-4def-8efa-e73927026fc9" name="更改" comment="# 添加跳转新菜单">
-      <change afterPath="$PROJECT_DIR$/pages/station_switch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test_data.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_switch_station.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/home_page_data.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/home_page_data.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/login_data.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/login_data.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/station_switch.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/station_switch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_sy_logout.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_sy_logout.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,15 +38,20 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2yZy0r7I97249LZso2aWHPLNV6s" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python 测试.Python 测试 (test_switch_station.py 内).executor": "Run",
     "Python 测试.Python 测试 (test_sy_login.py 内).executor": "Run",
     "Python 测试.Python 测试 (test_sy_logout.py 内).executor": "Run",
+    "Python 测试.test_switch_station.test_switch_station 的 Python 测试.executor": "Run",
     "Python 测试.test_sy_login.test_login 的 Python 测试.executor": "Run",
     "Python 测试.test_sy_login.test_search 的 Python 测试.executor": "Run",
     "Python 测试.test_sy_logout.test_logout 的 Python 测试.executor": "Run",
@@ -57,7 +70,7 @@
       <recent name="$PROJECT_DIR$/tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.LS_factoryCode">
+  <component name="RunManager" selected="Python 测试.test_sy_logout.test_logout 的 Python 测试">
     <configuration name="LS_factoryCode" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="dfs_webUI_auto" />
       <option name="ENV_FILES" value="" />
@@ -102,18 +115,18 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python 测试 (test_sy_login.py 内)" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python 测试 (test_switch_station.py 内)" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="dfs_webUI_auto" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pages" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_sy_login.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_switch_station.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -132,7 +145,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="test_sy_login.test_login 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="test_switch_station.test_switch_station 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="dfs_webUI_auto" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -143,7 +156,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_sy_login.test_login&quot;" />
+      <option name="_new_target" value="&quot;test_switch_station.test_switch_station&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -164,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.LS_factoryCode" />
         <item itemvalue="Python 测试.test_sy_logout.test_logout 的 Python 测试" />
         <item itemvalue="Python 测试.Python 测试 (test_sy_logout.py 内)" />
-        <item itemvalue="Python 测试.Python 测试 (test_sy_login.py 内)" />
-        <item itemvalue="Python 测试.test_sy_login.test_login 的 Python 测试" />
+        <item itemvalue="Python 测试.test_switch_station.test_switch_station 的 Python 测试" />
+        <item itemvalue="Python 测试.Python 测试 (test_switch_station.py 内)" />
+        <item itemvalue="Python.LS_factoryCode" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751442594260</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="# 添加跳转新菜单">
+      <option name="closed" value="true" />
+      <created>1752645509732</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1752645509732</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -235,6 +256,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="# UI自动化" />
     <MESSAGE value="# 更新README.md" />
     <MESSAGE value="# 添加跳转新菜单" />
