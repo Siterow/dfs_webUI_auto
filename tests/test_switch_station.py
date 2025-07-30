@@ -6,8 +6,7 @@ import time
 
 def test_switch_station(logged_in_driver):
     home = HomePage(logged_in_driver)
-    home.click_menu_tree()
-    home.click_menu()
+    home.change_menu()
     station_switch = StationSwitchPage(logged_in_driver)
     station_switch.switch_station()
     time.sleep(2)
