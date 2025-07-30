@@ -4,18 +4,22 @@ project_name/
 ├── tests/                  # ✅ 测试用例目录
 │   ├── test_sy_login.py    # 登录相关测试
 │   ├── test_sy_logout.py   # 退出登录相关测试
+│   ├── test_switchStation.py # 切换站点
 │   └── conftest.py         # pytest 的 fixture 配置
 │
 ├── pages/                  # ✅ Page Object 模式封装的页面类
-│   ├── login_page.py       # 登录页的元素和方法
-│   └── home_page.py        # 主页的元素和方法
+│   ├── login_page.py       # 登录页操作，包含输入账号密码登录
+│   ├── home_page.py        # 主页操作，包含切换页面
+│   └── station_switch.py   # 站点切换页面操作
+
 │
 ├── data/                   # ✅ 测试数据（如 YAML、JSON）
-│   ├── login_data.yaml     # 登录账号和元素
-│   └── home_page_data.yaml # 主页元素
+│   ├── test_data.yaml      # 把基础数据剥离出来，包含账号密码、环境、站点名称等
+│   ├── login_data.yaml     # 登录页元素
+│   └── home_page_data.yaml # 登录后元素
 │
 ├── utils/                  # ✅ 工具类（公共函数、封装好的等待等）
-│   └── wait_utils.py
+│   └── read_yaml.py        # 封装read_yaml方法
 │
 ├── reports/                # ✅ 测试报告输出目录（如 allure、html 报告）
 │
@@ -23,6 +27,7 @@ project_name/
 │
 ├── requirements.txt        # 依赖库列表
 ├── pytest.ini              # pytest 配置文件
+├── note.md                 # 杂项记录
 └── README.md               # 项目说明
 
 ```
