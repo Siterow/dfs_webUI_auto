@@ -1,4 +1,5 @@
 username: admin
 password: 88888888
-loginUrl: "http://guava.ob.shuyilink.com/#/login"
-locationName: "TEST-1130021|1地点车间1"
+loginUrl: 'http://guava.ob.shuyilink.com/#/login'
+locationName: 'TEST-1130021|1地点车间1'
+stationName: '1SY绑定站点1'

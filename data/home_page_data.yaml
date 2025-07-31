@@ -1,6 +1,10 @@
 userMenu_locator: '//span[@class="el-dropdown-link el-dropdown-selfdefine"]'   #主页右上角用户头像
 logout_button_locator: '//li[contains(text(), "退出登录")]'
 menu_business_locator: '//span[text()="业务流程"]'  # 左侧菜单-业务流程
-menu_stationSwitch_locator: '//div[contains(@class, "link-item")]//span[text()="站点切换"]'  # 左侧菜单-业务流程-站点切换
-menu_stationSwitch_locationInput_locator: '//input[@placeholder="搜索关键词"]'  # 站点切换-生产组织筛选
-choose_station_location: '//span[contains(@class, "txt-oneline") and text()="TEST-1130021|1地点车间1"]'  #点击地点
+menu_stationSwitch_locator: '//span[text()="站点切换"]'  # 左侧菜单-业务流程-站点切换
+search_station_location: '//input[@placeholder="搜索关键词"]'  # 站点切换-生产组织筛选
+#choose_station_location: '//span[contains(@class, "txt-oneline") and text()="TEST-1130021|1地点车间1"]'  #点击地点
+search_station_name: '//input[@placeholder="搜索站点名称"]'
+#choose_station: '//div[contains(text(), "1SY绑定站点1")]'
+button_search: '//div[@class="search-box-btn"]'
+button_switch_station: '//button[contains(@class, "el-button") and normalize-space(span/text())="确认切换"]'

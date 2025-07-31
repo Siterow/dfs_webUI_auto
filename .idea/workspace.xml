@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09e1021c-1dd1-4def-8efa-e73927026fc9" name="更改" comment="# 站点切换界面选中组织">
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="09e1021c-1dd1-4def-8efa-e73927026fc9" name="更改" comment="# 增加requirements.txt，更新README">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/home_page_data.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/home_page_data.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test_data.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/test_data.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/station_switch.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/station_switch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_switch_station.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_switch_station.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,7 +245,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753862234053</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="# 增加requirements.txt，更新README">
+      <option name="closed" value="true" />
+      <created>1753863901550</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1753863901550</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -264,7 +274,8 @@
     <MESSAGE value="# 添加跳转新菜单" />
     <MESSAGE value="# 添加站点切换，优化xpath把动态路径都改了" />
     <MESSAGE value="# 站点切换界面选中组织" />
-    <option name="LAST_COMMIT_MESSAGE" value="# 站点切换界面选中组织" />
+    <MESSAGE value="# 增加requirements.txt，更新README" />
+    <option name="LAST_COMMIT_MESSAGE" value="# 增加requirements.txt，更新README" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
