@@ -16,7 +16,7 @@ def test_switch_station(logged_in_driver):
         station_switch.switch_station()
         welding_page = WeldingHxSingle(logged_in_driver)
         welding_page.open_hidden_gate_and_submit(content='content')
-        time.sleep(20)
+        time.sleep(5)
         # 找到元素
 
         # 示例断言，实际可根据切换后页面内容调整

@@ -3,6 +3,7 @@
 """
 import time
 
+from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -54,29 +55,32 @@ class WeldingHxSingle:
         """
         self.open_hidden_gate(width_px=width_px, height_px=height_px)
         # 查找并选择可见且可交互的输入框
-        time.sleep(5)
+        time.sleep(3)
         print("正在点击暗门")
+        input_box = self.wait.until(EC.visibility_of_element_located(self.hidden_gate_input))
+        input_box.send_keys(content)
+        input_box.send_keys(Keys.ENTER)
 
-        self.driver.execute_script(
-            """
-            function setElInputByLabel(labelText, value) {
-              let label = Array.from(document.querySelectorAll('label.el-form-item__label'))
-                               .find(l => l.textContent.trim() === labelText);
-              if (!label) return false;
-              let input = label.nextElementSibling?.querySelector('input');
-              if (!input) return false;
-              input.value = value;
-              input.dispatchEvent(new Event('input', { bubbles: true }));
-              input.dispatchEvent(new Event('change', { bubbles: true }));
-              return true;
-            }
-            function generateRandomDigits(length) {
-              return Array.from({length}, () => Math.floor(Math.random() * 10)).join('');
-            }
-            let randomValue = 'TEST-DJM-' + generateRandomDigits(9);
-            setElInputByLabel('扫码', randomValue);
-            """
-        )
+        # self.driver.execute_script(
+        #     """
+        #     function setElInputByLabel(labelText, value) {
+        #       let label = Array.from(document.querySelectorAll('label.el-form-item__label'))
+        #                        .find(l => l.textContent.trim() === labelText);
+        #       if (!label) return false;
+        #       let input = label.nextElementSibling?.querySelector('input');
+        #       if (!input) return false;
+        #       input.value = value;
+        #       input.dispatchEvent(new Event('input', { bubbles: true }));
+        #       input.dispatchEvent(new Event('change', { bubbles: true }));
+        #       return true;
+        #     }
+        #     function generateRandomDigits(length) {
+        #       return Array.from({length}, () => Math.floor(Math.random() * 10)).join('');
+        #     }
+        #     let randomValue = 'TEST-DJM-' + generateRandomDigits(9);
+        #     setElInputByLabel('扫码', randomValue);
+        #     """
+        # )
 
 
     # def welding_hx_manufacture(self, content = None):

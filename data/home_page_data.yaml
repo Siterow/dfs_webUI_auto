@@ -13,7 +13,7 @@ welding_hx_single_check: '//button[span[normalize-space(text())="确 定"]]'
 update_toorCode: '//div[@class="message-btn" and normalize-space(text())="打托"][1]'
 update_boxCode: '//div[@class="message-btn" and normalize-space(text())="更新"][1]'
 open-simulation: '//div[@class="open-simulation"]'
-hidden_gate_input: '//label[text()="扫码]"/following-sibling::div//input'
+hidden_gate_input: '//label[text()="扫码"]/following-sibling::div//input'
 #hidden_gate_confirm: '//button[span[normalize-space(text())="确 定"]]'
 dialog_mask: '//div[@class="v-modal"]'
 

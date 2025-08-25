@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09e1021c-1dd1-4def-8efa-e73927026fc9" name="更改" comment="# 优化">
-      <change afterPath="$PROJECT_DIR$/data/manufacture_report.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/welding_hx_single.py" afterDir="false" />
+    <list default="true" id="09e1021c-1dd1-4def-8efa-e73927026fc9" name="更改" comment="# 增加js脚本往输入框输入数据">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/home_page_data.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/home_page_data.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/station_switch.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/station_switch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_switch_station.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_switch_station.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/welding_hx_single.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/welding_hx_single.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,7 +274,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753948153532</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="# 增加js脚本往输入框输入数据">
+      <option name="closed" value="true" />
+      <created>1756116366442</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1756116366442</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -300,7 +305,8 @@
     <MESSAGE value="# 站点切换界面选中组织" />
     <MESSAGE value="# 增加requirements.txt，更新README" />
     <MESSAGE value="# 优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="# 优化" />
+    <MESSAGE value="# 增加js脚本往输入框输入数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="# 增加js脚本往输入框输入数据" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
