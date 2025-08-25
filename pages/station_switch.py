@@ -16,13 +16,15 @@ class StationSwitchPage:
         self.wait = WebDriverWait(driver, 10)
         # 读取定位器
         data = read_yaml(os.path.join(os.path.dirname(__file__), '../data/home_page_data.yaml'))
-        test_data = read_yaml(os.path.join(os.path.dirname(__file__), "../data/test_data.yaml"))
         self.location_input_locator = (By.XPATH, data.get('search_station_location'))
         self.station_input_locator = (By.XPATH, data.get('search_station_name'))
         self.button_search = (By.XPATH, data.get('button_search'))
         self.choose_station_locator = (By.XPATH, data.get('choose_station'))
         self.button_switch_station = (By.XPATH, data.get('button_switch_station'))
-
+        self.welding_hx_single = (By.XPATH, data.get('welding_hx_single'))
+        self.welding_hx_single_check = (By.XPATH, data.get('welding_hx_single_check'))
+        # 读取基础数据，地点名称与站点名称
+        test_data = read_yaml(os.path.join(os.path.dirname(__file__), "../data/test_data.yaml"))
         self.default_locationName = test_data.get('locationName')
         self.default_stationName = test_data.get('stationName')
 
@@ -49,18 +51,10 @@ class StationSwitchPage:
         dynamic_station_locator = (By.XPATH, f'//span[contains(text(), "{stationName}")]')
         print(f"正在查找站点: {stationName}")
         print(f"使用的定位器: {dynamic_station_locator}")
-        
-        # # 尝试查找所有包含站点名称的元素
-        # try:
-        #     all_stations = self.driver.find_elements(By.XPATH, f'//*[contains(text(), "{stationName}")]')
-        #     print(f"找到 {len(all_stations)} 个包含 '{stationName}' 的元素:")
-        #     for i, elem in enumerate(all_stations):
-        #         print(f"  元素 {i+1}: {elem.text}")
-        # except Exception as e:
-        #     print(f"查找元素时出错: {e}")
-        #
         station_info = self.wait.until(EC.visibility_of_element_located(dynamic_station_locator))
         station_info.click()
+        self.wait.until(EC.visibility_of_element_located(self.welding_hx_single)).click()
+        self.wait.until(EC.visibility_of_element_located(self.welding_hx_single_check)).click()
 
     def click_switch_button(self):
         button = self.wait.until(EC.visibility_of_element_located(self.button_switch_station))
@@ -71,5 +65,5 @@ class StationSwitchPage:
         stationName = stationName or self.default_stationName
         self.choose_location(locationName)
         self.choose_station(stationName)
-        self.click_switch_button()
+        # self.click_switch_button()
 
